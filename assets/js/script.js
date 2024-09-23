@@ -1,8 +1,8 @@
-//task1 solution
+//Task1: Calculator
 const calculator = function (num1, num2, operator) {
   if (
     typeof num1 !== "number" ||
-    typeof num1 !== "number" ||
+    typeof num2 !== "number" ||
     isNaN(num1 - num2)
   ) {
     return null;
@@ -22,7 +22,7 @@ const calculator = function (num1, num2, operator) {
   }
 };
 
-//task2 while loop solution
+//Task 2: Sum using while loop
 
 let whileLoopSum = 0;
 
@@ -34,7 +34,7 @@ while (i <= 100) {
 }
 console.log(whileLoopSum);
 
-//task2 do-while loop solution
+// Task 2: Sum using do-while loop
 
 let doWhileLoopSum = 0;
 
@@ -47,7 +47,7 @@ do {
 
 console.log(doWhileLoopSum);
 
-//task2 for loop solution
+// Task 2: Sum using for loop
 
 let forLoopSum = 0;
 
@@ -58,7 +58,7 @@ for (i = 1; i <= 100; i++) {
 console.log(forLoopSum);
 
 /*
-//task3 while loop unlimited
+// Task 3: Unlimited attempts with while loop
 
 let whileAnswer;
 
@@ -71,7 +71,7 @@ while (whileAnswer !== 6) {
 }
     */
 
-/* //task3 do-while loop unlimited
+/* // Task 3: Unlimited attempts with do-while loop
 
 let doWhileAnswer;
 
@@ -85,7 +85,7 @@ do {
  */
 
 /* 
-//task3 for loop unlimited
+// Task 3: Unlimited attempts with for loop
 
 for (i = 1; i > 0; i++) {
   let forLoopAnswer = +prompt("Розв'яжіть рівняння: 2 + 2 * 2");
@@ -99,7 +99,7 @@ for (i = 1; i > 0; i++) {
   */
 
 /*
-//task3 for loop limited
+// Task 3: Limited attempts with while loop
 
 let answer;
 let attempts = 3;
@@ -123,6 +123,7 @@ while (attempts > 0) {
 }
   */
 
+//Bonus task: Power function
 const power = function (num, exponent) {
   if (
     typeof num !== "number" ||
