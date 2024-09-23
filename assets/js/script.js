@@ -122,3 +122,23 @@ while (attempts > 0) {
   }
 }
   */
+
+const power = function (num, exponent) {
+  if (
+    typeof num !== "number" ||
+    typeof exponent !== "number" ||
+    isNaN(num - exponent)
+  ) {
+    return null;
+  }
+
+  let result = 1;
+
+  while (exponent > 0) {
+    result *= num;
+    exponent--;
+  }
+  return result;
+};
+
+console.log(power(3, 4));
