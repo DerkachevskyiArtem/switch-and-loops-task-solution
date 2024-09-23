@@ -51,7 +51,7 @@ console.log(doWhileLoopSum);
 
 let forLoopSum = 0;
 
-for (i = 1; i <= 100; i++) {
+for (let i = 1; i <= 100; i++) {
   forLoopSum += i;
 }
 
@@ -87,7 +87,7 @@ do {
 /* 
 // Task 3: Unlimited attempts with for loop
 
-for (i = 1; i > 0; i++) {
+for (let i = 1; i > 0; i++) {
   let forLoopAnswer = +prompt("Розв'яжіть рівняння: 2 + 2 * 2");
   if (forLoopAnswer === 6) {
     alert("Ви дали правильну відповідь!");
@@ -121,6 +121,26 @@ while (attempts > 0) {
     alert("Ви використали всі спроби. Правильна відповідь: 6");
   }
 }
+
+// Task 3: Limited attempts with for loop
+let attempts = 3;
+
+for (let i = 0; i < attempts; i++) {
+  let answer = +prompt("Розв'яжіть рівняння: 2 + 2 * 2");
+  
+  if (answer === 6) {
+    alert("Ви дали правильну відповідь!");
+    break;
+  } else {
+    alert(`Неправильно, спробуйте ще раз. У вас залишилось ${attempts - i - 1} спроб(и).`);
+   // alert("Неправильно. У вас минус одна спроба.");
+  }
+  
+  if (i === attempts - 1) {
+    alert("Ви використали всі спроби. Правильна відповідь: 6");
+  }
+}
+
   */
 
 //Bonus task: Power function
