@@ -87,7 +87,7 @@ do {
 /* 
 // Task 3: Unlimited attempts with for loop
 
-for (let i = 1; i > 0; i++) {
+for (;;) {
   let forLoopAnswer = +prompt("Розв'яжіть рівняння: 2 + 2 * 2");
   if (forLoopAnswer === 6) {
     alert("Ви дали правильну відповідь!");
