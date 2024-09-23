@@ -133,12 +133,18 @@ const power = function (num, exponent) {
   }
 
   let result = 1;
+  let positiveExponent = exponent;
 
-  while (exponent > 0) {
-    result *= num;
-    exponent--;
+  if (exponent < 0) {
+    positiveExponent = -exponent;
   }
-  return result;
+
+  while (positiveExponent > 0) {
+    result *= num;
+    positiveExponent--;
+  }
+  return exponent < 0 ? 1 / result : result;
 };
 
-console.log(power(3, 4));
+console.log(power(8, -2));
+
