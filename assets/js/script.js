@@ -16,7 +16,7 @@ const calculator = function (num1, num2, operator) {
     case "*":
       return num1 * num2;
     case "/":
-      return num2 !== 0 ? num1 / num2 : "Помилка! Ділення на нуль не можливе.";
+      return num1 / num2;
     default:
       return "Оператор вказанно не вірно! Використайте: +, -, *, /";
   }
